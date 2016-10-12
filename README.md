@@ -14,7 +14,8 @@ dos "~~"
 1. el numero 
 2. de las 
 3. listas
-  . lista ordenada
+  3. sublista ordenada
+  
 4. ordenadas
   * lista no ordenada
 
