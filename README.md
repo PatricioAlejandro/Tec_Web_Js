@@ -33,11 +33,27 @@ para utilizar img debemos colocar texto alternativo en brackets
  `tilde invertida`
  
  para formatear el codigo en un bloque se necesita tres 
+ 
+* codigo en javascript
+ 
  ```javascript 
  var mensaje="hola";
  ``` 
  aqui se escoje el 
  lenguaje justo despues de las tres tildes
+ 
+* codigo en consola
+
+  ```> apt-get update paquete
+  ```
+
+* codigo en html
+
+```
+<html>
+</html>
+```
+  
  
 # Tec_Web_Js
 Curso de Tecnologias Web con Javascript
