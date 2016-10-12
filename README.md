@@ -69,6 +69,15 @@ Markdown | Less | Pretty
 
 para escribir varias lineas de citas se necesita >
 > yo solo se que la bida es con b
+
+
+## Saltos de linea
+
+---
+
+***
+
+___
  
 # Tec_Web_Js
 Curso de Tecnologias Web con Javascript
