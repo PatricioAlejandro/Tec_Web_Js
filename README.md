@@ -54,7 +54,15 @@ para utilizar img debemos colocar texto alternativo en brackets
 <html>
 </html>
 ```
-  
+
+## Tablas
+
+para utilizar tablas sen necesita separar las columnas con pipes " | " 
+
+Markdown | Less | Pretty
+--- | --- | ---
+*Still* | `renders` | **nicely**
+1 | 2 | 3
  
 # Tec_Web_Js
 Curso de Tecnologias Web con Javascript
