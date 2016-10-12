@@ -63,6 +63,12 @@ Markdown | Less | Pretty
 --- | --- | ---
 *Still* | `renders` | **nicely**
 1 | 2 | 3
+
+
+### Citas
+
+para escribir varias lineas de citas se necesita >
+> yo solo se que la bida es con b
  
 # Tec_Web_Js
 Curso de Tecnologias Web con Javascript
