@@ -35,7 +35,8 @@ para utilizar img debemos colocar texto alternativo en brackets
  para formatear el codigo en un bloque se necesita tres 
  ```javascript 
  var mensaje="hola";
- ``` aqui se escoje el 
+ ``` 
+ aqui se escoje el 
  lenguaje justo despues de las tres tildes
  
 # Tec_Web_Js
