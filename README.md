@@ -44,7 +44,8 @@ para utilizar img debemos colocar texto alternativo en brackets
  
 * codigo en consola
 
-  ```> apt-get update paquete
+  ```
+  > apt-get update paquete
   ```
 
 * codigo en html
