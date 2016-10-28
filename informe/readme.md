@@ -8,7 +8,7 @@
 
 ### Tema : `Introducción a la Web` 
 ### Fecha : `2016-10-21`
-### Estudiante : `Vicente Adrian Eguez Sarzosa`
+### Estudiante : `Chavez Melo Patricio Alejandro`
 ### Profesor : `Tania Calle - Adrian Eguez`
 ### Número de informe : `1`
 
@@ -58,32 +58,14 @@ La Web se desarrolló entre marzo de 1989 y diciembre de 1990.2 3 por el inglés
 
 
 <a name="desarrollo"></a>
+
 ## Desarrollo del informe
 
 ### Imagenes desde Github **IMPORTANTE**
 
-Se pueden usar imágenes desde nuestros archivos en github que constan de la siguiente URL:
+Node.js® es una entorno de ejecución para JavaScript construido con el motor de JavaScript V8 de Chrome. Node.js usa un modelo de operaciones E/S sin bloqueo y orientado a eventos, que lo hace liviano y eficiente. El ecosistema de paquetes de Node.js, npm, es el ecosistema mas grande de librerías de código abierto en el mundo.
 
-- Github
-* La url de github que es `https://github.com` 
-- Usuario
-* La url de usuario de github que en este caso es: `/adrianeguez` 
-- Repositorio
-* El repositorio de Github que estamos usando, en este caso es `/Tec_Web_Js_2016_B`
-- Rama o  Branch
-* La rama de nuestro repositorio en este formato: `/blob/master`
-- El PATH
-* La direccíon de nuesto archivo por ejemplo `/carpeta/subcarpeta/subsubcarpeta/archivo.png` en este ejemplo es `/Ejemplo%20de%20un%20Informe/Imagenes/Flujograma.png` 
-- RAW
-* Por ultimo mandamos un Query String Parameter de la con la variable `raw` y valor `true` de la siguiente manera: `?raw=true`
 
-**Al final** nuestro url queda de la siguiente manera:
-
-#### `https://github.com/adrianeguez/Tec_Web_Js_2016_B/blob/master/Ejemplo%20de%20un%20Informe/Imagenes/Flujograma.png?raw=true`
-
-<p align="center">
-<img src="https://github.com/adrianeguez/Tec_Web_Js_2016_B/blob/master/Ejemplo%20de%20un%20Informe/Imagenes/Flujograma.png?raw=true" width="500" height="800">
-</p>
 
 Por ultimo podemos centrar las imagenes de la siguiente manera:
 
@@ -130,4 +112,4 @@ Para nosotros utilizar los Links dentro de Github debemos de hacer dos cosas:
 
 # ¡Gracias por su atención!
 
-Author: [Adrian Eguez](https://github.com/adrianeguez)
+Author: [Patricio Chavez](https://github.com/PatricioAlejandro)
