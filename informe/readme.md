@@ -112,7 +112,7 @@ Para nosotros utilizar los Links dentro de Github debemos de hacer dos cosas:
 ## Conclusiones y Recomendaciones
 
 - Se necesita tener conocimientos de algun framework como el de: 
-<a href="https://es.wikipedia.org/wiki/Saint_Seiya" target="_blank">
+<a href="http://getbootstrap.com" target="_blank">
 <img src="https://pkp.sfu.ca/wp-content/uploads/2016/09/bootstrap-logo.png" width="50" height="50">
 </a>
 - Conocer a cerca de los status codes que tiene una conexion como el 404 error.
