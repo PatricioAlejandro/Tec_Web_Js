@@ -63,9 +63,20 @@ La Web se desarrolló entre marzo de 1989 y diciembre de 1990.2 3 por el inglés
 
 ### Imagenes desde Github **IMPORTANTE**
 
+
+<img src="http://doapps.me/blog/wp-content/uploads/2015/10/nodejs-dark1-1.jpg" width="450" height="200">
+
 Node.js® es una entorno de ejecución para JavaScript construido con el motor de JavaScript V8 de Chrome. Node.js usa un modelo de operaciones E/S sin bloqueo y orientado a eventos, que lo hace liviano y eficiente. El ecosistema de paquetes de Node.js, npm, es el ecosistema mas grande de librerías de código abierto en el mundo.
 
+<img src="https://www.getpostman.com/img/v2/logo-glyph.png?0eb696e07f466ced153edf3166af5f11" width="450" height="450">  
+Mientras que los fundadores estaban trabajando juntos, y estaban frustrados con las herramientas existentes para las pruebas de API. Se sentía que tenía que haber una lengua mejor para los desarrolladores para comunicarse sobre las API. Esto condujo a la creación de Postman. Postman le ayuda a construir, las API de prueba, y de documentos más rápido.
 
+***
+### Inspector web de Google Chrome
+<img src="https://developer.chrome.com/devtools/images/elements-panel.png" width="1000" height="200"> 
+
+Las Herramientas para desarrolladores web como Chrome por ejemplo (DevTools para abreviar), son un conjunto de creación de páginas web y herramientas de depuración integradas en cada navegador. Los DevTools proporcionan a los desarrolladores web acceso profundo en la parte interna del navegador y su aplicación web. Usa los DevTools para realizar un seguimiento de manera eficiente por problemas de diseño, establecer puntos de interrupción de JavaScript, y obtener ideas para la optimización de código.
+<img src="https://lh4.googleusercontent.com/-gjxoCu8Fu3c/AAAAAAAAAAI/AAAAAAABTZo/2ZiFurxpyX0/s0-c-k-no-ns/photo.jpg" width="200" height="200"> 
 
 Por ultimo podemos centrar las imagenes de la siguiente manera:
 
@@ -100,11 +111,12 @@ Para nosotros utilizar los Links dentro de Github debemos de hacer dos cosas:
 
 ## Conclusiones y Recomendaciones
 
-- Se recomienda mejorar la presentacion
-- Se recomienda usar el ir a cabecera despues de terminar una seccion
-- Se aprendio el uso de HTML con Markdown
-- Conocimos herramientas de desarrollo web como postman e inspector web
-- Desarrollamos conocimientos de introducción Web
+- Se necesita tener conocimientos de algun framework como el de: 
+<a href="https://es.wikipedia.org/wiki/Saint_Seiya" target="_blank">
+<img src="https://pkp.sfu.ca/wp-content/uploads/2016/09/bootstrap-logo.png" width="50" height="50">
+</a>
+- Conocer a cerca de los status codes que tiene una conexion como el 404 error.
+- COnocer los diferentes metodos Http.
 
 <br>
 <a href="#cabecera">A la cabecera</a>
