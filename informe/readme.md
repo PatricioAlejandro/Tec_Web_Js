@@ -106,8 +106,20 @@ Tamano de las cabeceras varia desde h1 hasta h6 teniendo encuenta h1 es el mas g
 ### Uso de Grid <"div">
 <img src="https://github.com/PatricioAlejandro/Tec_Web_Js/blob/html-css/informe/img/Captura%20de%20pantalla%202016-11-01%20a%20las%2015.46.35.png?raw=true"> 
 
-Las Herramientas para desarrolladores web como Chrome por ejemplo (DevTools para abreviar), son un conjunto de creación de páginas web y herramientas de depuración integradas en cada navegador. Los DevTools proporcionan a los desarrolladores web acceso profundo en la parte interna del navegador y su aplicación web. Usa los DevTools para realizar un seguimiento de manera eficiente por problemas de diseño, establecer puntos de interrupción de JavaScript, y obtener ideas para la optimización de código.
-<img src="https://lh4.googleusercontent.com/-gjxoCu8Fu3c/AAAAAAAAAAI/AAAAAAABTZo/2ZiFurxpyX0/s0-c-k-no-ns/photo.jpg" width="200" height="200"> 
+Los `container` es un clase que sirve para contener a otros objetos y asi poderlos dar el estilo que se quiere a varios objetos diferentes.
+
+- Tipos de divisores:
+<br>
+col-md-?
+col-sm-?
+col-xs-?
+col-lg-?
+
+Siempre deben sumar doce unidades que es el maximo de la pantalla de cualquier dispositivo con sus escalas.
+
+
+
+<img src="https://github.com/PatricioAlejandro/Tec_Web_Js/blob/html-css/informe/img/Captura%20de%20pantalla%202016-11-01%20a%20las%2016.48.17.png?raw=true"> 
 
 
 
