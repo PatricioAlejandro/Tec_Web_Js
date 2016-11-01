@@ -74,6 +74,12 @@
             }],
             getNombre: function () {
                 return pato.nombre;
+            },
+            getApellido: function () {
+                return pato.apellido;
+            },
+            setApellido: function (newApellido) {
+                this.apellido = newApellido;
             }
 
         }
@@ -86,9 +92,9 @@
         console.log('Acceder al hermano');
         console.log(pato.hermanos);
 
-//        function getNombrePato() {
-//            return pato.nombre;
-//        }
+        //        function getNombrePato() {
+        //            return pato.nombre;
+        //        }
         console.log(pato.getNombre());
     </script>
 </head>
