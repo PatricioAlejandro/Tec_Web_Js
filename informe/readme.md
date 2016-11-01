@@ -130,12 +130,10 @@ Siempre deben sumar doce unidades que es el maximo de la pantalla de cualquier d
 
 ## Conclusiones y Recomendaciones
 
-- Se necesita tener conocimientos de algun framework como el de: 
+- Es importante conocer que css es el leguaje que le da el diseno bonito a la pagina, existen varios CDN que nos ayudan a tener como plantillas, una de ellas es:<br>
 <a href="http://getbootstrap.com" target="_blank">
 <img src="https://pkp.sfu.ca/wp-content/uploads/2016/09/bootstrap-logo.png" width="50" height="50">
 </a>
-- Conocer a cerca de los status codes que tiene una conexion como el 404 error.
-- COnocer los diferentes metodos Http.
 
 <br>
 <a href="#cabecera">A la cabecera</a>
