@@ -71,7 +71,10 @@
             }, {
                 nombre: 'Pedro',
                 apellido: 'Pato'
-            }]
+            }],
+            getNombre: function () {
+                return pato.nombre;
+            }
 
         }
         console.log('Acceder al nombre');
@@ -83,10 +86,10 @@
         console.log('Acceder al hermano');
         console.log(pato.hermanos);
 
-        function getNombrePato() {
-            return pato.nombre;
-        }
-        console.log(getNombrePato());
+//        function getNombrePato() {
+//            return pato.nombre;
+//        }
+        console.log(pato.getNombre());
     </script>
 </head>
 
