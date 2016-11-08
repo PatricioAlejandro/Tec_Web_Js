@@ -161,27 +161,57 @@
 
 
 
-//        var numsSheep = 4;
-//        var monthNumber = 1;
-//        var monthsToPrint = 12;
-//
-//        while (monthNumber <= monthsToPrint) {
-//            numsSheep = numsSheep * 4;
-//            console.log('Habran ' + numsSheep + ' ovejas despues de ' + monthNumber + ' meses.')
-//            if (monthNumber % 4 === 0) {
-//                numsSheep = numsSheep-numsSheep * 0.75;
-//                console.log(numsSheep + ' fueron enviadas en el ' + monthNumber + ' mes.')
-//            } else if (monthNumber > 10000) {
-//                numsSheep = numsSheep / 2;
-//                console.log(numsSheep + ' fueron enviadas en el ' + monthNumber + ' mes.')
-//            }
-//
-//            monthNumber++;
-//        }
+        //        var numsSheep = 4;
+        //        var monthNumber = 1;
+        //        var monthsToPrint = 12;
+        //
+        //        while (monthNumber <= monthsToPrint) {
+        //            numsSheep = numsSheep * 4;
+        //            console.log('Habran ' + numsSheep + ' ovejas despues de ' + monthNumber + ' meses.')
+        //            if (monthNumber % 4 === 0) {
+        //                numsSheep = numsSheep-numsSheep * 0.75;
+        //                console.log(numsSheep + ' fueron enviadas en el ' + monthNumber + ' mes.')
+        //            } else if (monthNumber > 10000) {
+        //                numsSheep = numsSheep / 2;
+        //                console.log(numsSheep + ' fueron enviadas en el ' + monthNumber + ' mes.')
+        //            }
+        //
+        //            monthNumber++;
+        //        }
+
+        //        
+        //        var resp = prompt('Cual es tu edad?');
+        //        console.log(parseInt(resp));
+
+
+        //funcion
+
+        
+        function multiplicar(num1,num2,num3){
+            return num1*num2*num3;
+        }
+        console.log(multiplicar(2,6,9));
         
         
-        var resp = prompt('Cual es tu edad?');
-        console.log(parseInt(resp));
+        function maxOf2(num1,num2){
+            if(num1===num2){
+                return num1;
+            }else{
+                if(num1>num2){
+                    return num1;
+                }else{
+                    return num2;
+                }
+            }
+        }
+        console.log(maxOf2(9,9));
+        
+        
+        function mystery(x,y){
+            return 4*x*y+3*y+5;
+        }
+        
+        console.log(mystery(4,7))
     </script>
 </head>
 
