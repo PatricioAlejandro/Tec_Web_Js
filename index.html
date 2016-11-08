@@ -147,16 +147,32 @@
         //            
         //        }
 
-        var count = 10;
-        while (count > 0) {
+        //        var count = 10;
+        //        while (count > 0) {
+        //
+        //            if (count <= 10 && count > 1) {
+        //                if (count % 2 === 0) {
+        //                    console.log('par ->' + count)
+        //                }
+        //            }
+        //
+        //            count--;
+        //        }
 
-            if (count <= 10 && count > 1) {
-                if (count % 2 === 0) {
-                    console.log('par ->' + count)
-                }
+
+
+        var numsSheep = 4;
+        var monthNumber = 1;
+        var monthsToPrint = 12;
+
+        while (monthNumber <= monthsToPrint) {
+            numsSheep = numsSheep * 4;
+            if (numsSheep >= 10000) {
+                numsSheep = numsSheep / 2;
+                console.log(numsSheep + ' fueron enviadas en el ' + monthNumber + ' mes.')
             }
-
-            count--;
+            console.log('Habran ' + numsSheep + ' ovejas despues de ' + monthNumber + ' meses.')
+            monthNumber++;
         }
     </script>
 </head>
