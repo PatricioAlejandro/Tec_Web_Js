@@ -145,12 +145,9 @@ Las personas que realizan tareas de optimización en motores de búsqueda se den
 <a name="conrec"></a>
 ## Conclusiones y Recomendaciones
 
-- Se necesita tener conocimientos de algun framework como el de: 
-<a href="http://getbootstrap.com" target="_blank">
-<img src="https://pkp.sfu.ca/wp-content/uploads/2016/09/bootstrap-logo.png" width="50" height="50">
-</a>
-- Conocer a cerca de los status codes que tiene una conexion como el 404 error.
-- COnocer los diferentes metodos Http.
+- Se obtuvo el conocimiento necesario para probar con nuevos objetos que vienen en la libreria de bootstrap.
+- los estilos se pueden dar a cualquier objeto como los forms o los botonote, etc.
+- Se aprendio que las librerias como bootstrap de CSS hacen mas facil que el diseno de  la pagina Web sea mas vistoso.
 
 <br>
 <a href="#cabecera">A la cabecera</a>
