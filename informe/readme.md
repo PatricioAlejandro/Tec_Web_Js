@@ -3,14 +3,14 @@
 ### Materia : `Tecnologías Web con JavaScript`
 
 <p align="center">
-<img src="http://www.javatpoint.com/images/javascript/javascript_logo.png" width="300" height="200">
+<img src="https://github.com/PatricioAlejandro/Tec_Web_Js/blob/bootstrap/informe/img/bootstrap.png" width="300" height="200">
 </p>
 
 ### Tema : `Introducción a la Web` 
-### Fecha : `2016-10-21`
+### Fecha : `2016-11-08`
 ### Estudiante : `Chavez Melo Patricio Alejandro`
 ### Profesor : `Tania Calle - Adrian Eguez`
-### Número de informe : `1`
+### Número de informe : `3`
 
 <a name="cabecera"></a>
 ## Índice de contenidos
