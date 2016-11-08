@@ -186,45 +186,59 @@
 
         //funcion
 
-        
-//        function multiplicar(num1,num2,num3){
-//            return num1*num2*num3;
-//        }
-//        console.log(multiplicar(2,6,9));
-//        
-//        
-//        function maxOf2(num1,num2){
-//            if(num1===num2){
-//                return num1;
-//            }else{
-//                if(num1>num2){
-//                    return num1;
-//                }else{
-//                    return num2;
-//                }
-//            }
-//        }
-//        console.log(maxOf2(9,9));
-//        
-//        
-//        function mystery(x,y){
-//            return 4*x*y+3*y+5;
-//        }
-//        
-//        console.log(mystery(4,7))
-        
-        function alimentar(sheePopulation,numberRanger){
-            return sheePopulation*2/numberRanger;
+
+        //        function multiplicar(num1,num2,num3){
+        //            return num1*num2*num3;
+        //        }
+        //        console.log(multiplicar(2,6,9));
+        //        
+        //        
+        //        function maxOf2(num1,num2){
+        //            if(num1===num2){
+        //                return num1;
+        //            }else{
+        //                if(num1>num2){
+        //                    return num1;
+        //                }else{
+        //                    return num2;
+        //                }
+        //            }
+        //        }
+        //        console.log(maxOf2(9,9));
+        //        
+        //        
+        //        function mystery(x,y){
+        //            return 4*x*y+3*y+5;
+        //        }
+        //        
+        //        console.log(mystery(4,7))
+
+        //        function alimentar(sheePopulation,numberRanger){
+        //            return sheePopulation*2/numberRanger;
+        //        }
+        //        console.log(alimentar(4,2))
+        //        
+        //        
+        //        var movie1 = [16,"Candles"];
+        //        var movie2 = [3,"Men","and","a","baby"];
+        //        var eightiesMovies = [movie1,movie2];
+        //        
+        //        var baby = eightiesMovies[1][4];
+        //        
+
+
+        function countString(arreglo) {
+            var count =0;
+            for (var i = 0; i < arreglo.length; i++) {
+                if (typeof arreglo[i] == 'string'){
+                    count ++;
+                }
+            }
+            return count;
+
         }
-        console.log(alimentar(4,2))
-        
-        
-        var movie1 = [16,"Candles"];
-        var movie2 = [3,"Men","and","a","baby"];
-        var eightiesMovies = [movie1,movie2];
-        
-        var baby = eightiesMovies[1][4];
-        
+        var array = [1,'2',3,'4',5,'seis'];
+        console.log(countString(array))
     </script>
 </head>
 
