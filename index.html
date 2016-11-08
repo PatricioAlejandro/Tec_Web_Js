@@ -161,23 +161,27 @@
 
 
 
-        var numsSheep = 4;
-        var monthNumber = 1;
-        var monthsToPrint = 12;
-
-        while (monthNumber <= monthsToPrint) {
-            numsSheep = numsSheep * 4;
-            console.log('Habran ' + numsSheep + ' ovejas despues de ' + monthNumber + ' meses.')
-            if (monthNumber % 4 === 0) {
-                numsSheep = numsSheep-numsSheep * 0.75;
-                console.log(numsSheep + ' fueron enviadas en el ' + monthNumber + ' mes.')
-            } else if (monthNumber > 10000) {
-                numsSheep = numsSheep / 2;
-                console.log(numsSheep + ' fueron enviadas en el ' + monthNumber + ' mes.')
-            }
-
-            monthNumber++;
-        }
+//        var numsSheep = 4;
+//        var monthNumber = 1;
+//        var monthsToPrint = 12;
+//
+//        while (monthNumber <= monthsToPrint) {
+//            numsSheep = numsSheep * 4;
+//            console.log('Habran ' + numsSheep + ' ovejas despues de ' + monthNumber + ' meses.')
+//            if (monthNumber % 4 === 0) {
+//                numsSheep = numsSheep-numsSheep * 0.75;
+//                console.log(numsSheep + ' fueron enviadas en el ' + monthNumber + ' mes.')
+//            } else if (monthNumber > 10000) {
+//                numsSheep = numsSheep / 2;
+//                console.log(numsSheep + ' fueron enviadas en el ' + monthNumber + ' mes.')
+//            }
+//
+//            monthNumber++;
+//        }
+        
+        
+        var resp = prompt('Cual es tu edad?');
+        console.log(parseInt(resp));
     </script>
 </head>
 
