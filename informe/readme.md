@@ -26,7 +26,6 @@
   - <a href="#WAI">WAI Web</a>
   - <a href="#Validacion">Validacion Web</a>
   - <a href="#SEO">SEO Web</a>
-- <a href="#hist">Historia y Facts</a>
 - <a href="#desarrollo">Desarrollo de la Práctica</a>
 - <a href="#conrec">Conclusiones y Recomendaciones</a> 
 
@@ -82,26 +81,31 @@ Flexibilidad
 Facilidad de uso
 Portabilidad
 Seguridad, etc.
-(Fuente: <a href="http://www.usabilidadweb.com.ar/metodos_eval_calidad_web.php">Wikipedia</a>)
+(Fuente: <a href="http://www.usabilidadweb.com.ar/metodos_eval_calidad_web.php">UsabilidadWEB</a>)
 <a href="#cabecera">A la cabecera</a>
 
 
 <a name="WAI"></a>
 ### WAI Web
 
-(Fuente: <a href="https://es.wikipedia.org/wiki/World_Wide_Web">Wikipedia</a>)
+La accesibilidad Web significa que personas con algún tipo de discapacidad van a poder hacer uso de la Web. En concreto, al hablar de accesibilidad Web se está haciendo referencia a un diseño Web que va a permitir que estas personas puedan percibir, entender, navegar e interactuar con la Web, aportando a su vez contenidos. La accesibilidad Web también beneficia a otras personas, incluyendo personas de edad avanzada que han visto mermadas sus habilidad a consecuencia de la edad.
+(Fuente: <a href="http://www.w3c.es/Traducciones/es/WAI/intro/accessibility">w3c</a>)
 <a href="#cabecera">A la cabecera</a>
 
 <a name="Validacion"></a>
 ### Validacion Web
 
-(Fuente: <a href="https://es.wikipedia.org/wiki/World_Wide_Web">Wikipedia</a>)
+La mayoría de los documentos web se escriben utilizando lenguajes de marcas, como HTML o XHTML. Estos lenguajes están definidos por las especificaciones técnicas, que suelen incluir una gramática formal legible por máquina (y el vocabulario). El acto de comprobación de un documento en contra de estas limitaciones se llama validación, y esto es lo que hace el marcado de Validador.
+(Fuente: <a href="https://validator.w3.org">w3c</a>)
 <a href="#cabecera">A la cabecera</a>
 
 <a name="SEO"></a>
 ### SEO Web
 
-(Fuente: <a href="https://es.wikipedia.org/wiki/World_Wide_Web">Wikipedia</a>)
+El posicionamiento en buscadores, optimización en motores de búsqueda u optimización web es el proceso técnico mediante el cual se realizan cambios en la estructura e información de una página web, con el objetivo de mejorar la visibilidad de un sitio web en los resultados orgánicos de los diferentes buscadores. También es frecuente encontrar la denominación en inglés, search engine optimization, y especialmente sus iniciales SEO.
+
+Las personas que realizan tareas de optimización en motores de búsqueda se denominan posicionadores web o Consultor SEO y en inglés, search engine optimizers (cuyas iniciales también son SEO) o SEO specialists.
+(Fuente: <a href="https://es.wikipedia.org/wiki/Posicionamiento_en_buscadores">Wikipedia</a>)
 <a href="#cabecera">A la cabecera</a>
 
 
@@ -126,37 +130,10 @@ Mientras que los fundadores estaban trabajando juntos, y estaban frustrados con 
 Las Herramientas para desarrolladores web como Chrome por ejemplo (DevTools para abreviar), son un conjunto de creación de páginas web y herramientas de depuración integradas en cada navegador. Los DevTools proporcionan a los desarrolladores web acceso profundo en la parte interna del navegador y su aplicación web. Usa los DevTools para realizar un seguimiento de manera eficiente por problemas de diseño, establecer puntos de interrupción de JavaScript, y obtener ideas para la optimización de código.
 <img src="https://lh4.googleusercontent.com/-gjxoCu8Fu3c/AAAAAAAAAAI/AAAAAAABTZo/2ZiFurxpyX0/s0-c-k-no-ns/photo.jpg" width="200" height="200"> 
 
-Por ultimo podemos centrar las imagenes de la siguiente manera:
 
-
-```
-<p align="center">
-
-<img src="https://github.com/adrianeguez/Tec_Web_Js_2016_B/blob/master/Ejemplo%20de%20un%20Informe/Imagenes/Flujograma.png?raw=true" width="500" height="800">
-
-</p>
-```
-
-### Links dentro de github
-
-Para nosotros utilizar los Links dentro de Github debemos de hacer dos cosas:
-
-1. Definir un anchor name donde nosotros queramos mover cuando demos clic de la siguiente manera y formate (**NOTESE QUE ESTAN JUNTAS**):
-
-```
-<a name="nombre"></a>
-## titulo2
-```
-2. Después de esto debemos de linkear mediante un texto por ejemplo en una lista de la siguiente manera (**NO ELVIDAR EL `#`**):
-
-```
-- <a href="#nombre">Dale clic aqui para ir al titulo 2</a>
-```
-<a name="conrec"></a>
-
-<br>
 <a href="#cabecera">A la cabecera</a>
 
+<a name="conrec"></a>
 ## Conclusiones y Recomendaciones
 
 - Se necesita tener conocimientos de algun framework como el de: 
