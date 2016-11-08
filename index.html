@@ -100,27 +100,39 @@
         //        pato.setApellido('Melo');
         //        console.log(pato.getApellido());
 
-        var count = 10;
-        var arregloNumero = [];
-        while (count > 0) {
-            console.log(count);
-            count--;
-        }
+        //        var count = 10;
+        //        var arregloNumero = [];
+        //        while (count > 0) {
+        //            console.log(count);
+        //            count--;
+        //        }
+        //
+        //        var count = 10;
+        //        while (count > 0) {
+        //
+        //            if (count % 2 === 0) {
+        //                console.log('par ->' + count)
+        //            } else {
+        //                console.log('impar ->' + count)
+        //            }
+        //            arregloNumero.push(count);
+        //            count--;
+        //        }
+        //        arregloNumero.pop(); //eliminar ultimo
+        //        arregloNumero.splice(0, 1);
+        //        console.log(arregloNumero);
 
-        var count = 10;
-        while (count > 0) {
-            
-            if(count%2===0){
-                console.log('par ->'+count)
-            }else{
-                console.log('impar ->'+count)
-            }
-            arregloNumero.push(count);
-            count--;
+        //Sheeps Problem
+
+        var numsSheep = 4;
+        var monthNumber = 1;
+        var monthsToPrint = 12;
+
+        while (monthNumber <= monthsToPrint) {
+            numsSheep = numsSheep * 4;
+            console.log('Habran ' + numsSheep + ' ovejas despues de ' + monthNumber + ' meses.')
+            monthNumber++;
         }
-        arregloNumero.pop();//eliminar ultimo
-        arregloNumero.splice(0,1);
-        console.log(arregloNumero);
     </script>
 </head>
 
