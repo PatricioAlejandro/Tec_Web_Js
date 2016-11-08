@@ -117,22 +117,22 @@ Las personas que realizan tareas de optimización en motores de búsqueda se den
 <br>
 <img src="https://github.com/PatricioAlejandro/Tec_Web_Js/blob/bootstrap/informe/img/Captura%20de%20pantalla%202016-11-08%20a%20las%2000.09.29.png" width="600" height="200">
 <br>
-<img src="https://github.com/PatricioAlejandro/Tec_Web_Js/blob/bootstrap/informe/img/Captura%20de%20pantalla%202016-11-08%20a%20las%2000.22.34.png" width="600" height="200">
+<img src="https://github.com/PatricioAlejandro/Tec_Web_Js/blob/bootstrap/informe/img/Captura%20de%20pantalla%202016-11-08%20a%20las%2000.22.34.png">
 
 
 ### Tablas con Bootstrap.
 <br>
-<img src="https://github.com/PatricioAlejandro/Tec_Web_Js/blob/bootstrap/informe/img/Captura%20de%20pantalla%202016-11-08%20a%20las%2000.13.47.png" width="600" height="200">
+<img src="https://github.com/PatricioAlejandro/Tec_Web_Js/blob/bootstrap/informe/img/Captura%20de%20pantalla%202016-11-08%20a%20las%2000.13.47.png">
 <br>
-<img src="https://github.com/PatricioAlejandro/Tec_Web_Js/blob/bootstrap/informe/img/Captura%20de%20pantalla%202016-11-08%20a%20las%2000.22.49.png" width="600" height="200">
+<img src="https://github.com/PatricioAlejandro/Tec_Web_Js/blob/bootstrap/informe/img/Captura%20de%20pantalla%202016-11-08%20a%20las%2000.22.49.png">
 ### Forms con Bootstrap.
 <br>
-<img src="https://github.com/PatricioAlejandro/Tec_Web_Js/blob/bootstrap/informe/img/Captura%20de%20pantalla%202016-11-08%20a%20las%2000.14.23.png" width="600" height="200">
+<img src="https://github.com/PatricioAlejandro/Tec_Web_Js/blob/bootstrap/informe/img/Captura%20de%20pantalla%202016-11-08%20a%20las%2000.14.23.png">
 <br>
-<img src="https://github.com/PatricioAlejandro/Tec_Web_Js/blob/bootstrap/informe/img/Captura%20de%20pantalla%202016-11-08%20a%20las%2000.23.09.png" width="600" height="200">
+<img src="https://github.com/PatricioAlejandro/Tec_Web_Js/blob/bootstrap/informe/img/Captura%20de%20pantalla%202016-11-08%20a%20las%2000.23.09.png">
 ### Buttons.
 <br>
-<img src="https://github.com/PatricioAlejandro/Tec_Web_Js/blob/bootstrap/informe/img/Captura%20de%20pantalla%202016-11-08%20a%20las%2000.15.00.png" width="600" height="200">
+<img src="https://github.com/PatricioAlejandro/Tec_Web_Js/blob/bootstrap/informe/img/Captura%20de%20pantalla%202016-11-08%20a%20las%2000.15.00.png">
 <br>
 <img src="https://github.com/PatricioAlejandro/Tec_Web_Js/blob/bootstrap/informe/img/Captura%20de%20pantalla%202016-11-08%20a%20las%2000.23.44.png">
 
