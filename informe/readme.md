@@ -115,7 +115,7 @@ Las personas que realizan tareas de optimización en motores de búsqueda se den
 
 ### Etiquetas small, code, kbd.
 <br>
-<img src="https://github.com/PatricioAlejandro/Tec_Web_Js/blob/bootstrap/informe/img/Captura%20de%20pantalla%202016-11-08%20a%20las%2000.09.29.png" width="450" height="200">
+<img src="https://github.com/PatricioAlejandro/Tec_Web_Js/blob/bootstrap/informe/img/Captura%20de%20pantalla%202016-11-08%20a%20las%2000.09.29.png" width="600" height="200">
 <br>
 
 
