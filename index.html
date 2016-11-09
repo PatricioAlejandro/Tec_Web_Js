@@ -263,27 +263,56 @@
         //        })
 
 
+        //
+        //
+        //        var puzzlers = [function (input) {
+        //            return (3 * input - 8);
+        //        }, function (input) {
+        //            return Math.pow((input + 2), 3);
+        //        }, function (input) {
+        //            return (Math.pow((input), 2) - 9);
+        //        }, function (input) {
+        //            return (input % 4);
+        //        }];
+        //        console.log(puzzlers[0](5));
+        //        console.log(puzzlers[1](5));
+        //        console.log(puzzlers[2](5));
+        //        console.log(puzzlers[3](5));
+        //
+        //        
+        //        console.log(puzzlers[0](7));
+        //        console.log(puzzlers[1](7));
+        //        console.log(puzzlers[2](7));
+        //        console.log(puzzlers[3](7));
 
 
-        var puzzlers = [function (input) {
-            return (3 * input - 8);
-        }, function (input) {
-            return Math.pow((input + 2), 3);
-        }, function (input) {
-            return (Math.pow((input), 2) - 9);
-        }, function (input) {
-            return (input % 4);
-        }];
-        console.log(puzzlers[0](5));
-        console.log(puzzlers[1](5));
-        console.log(puzzlers[2](5));
-        console.log(puzzlers[3](5));
 
+
+
+
+
+        function adventureSelected(userChoice) {
+            if (userChoice == 1) {
+                return function () {
+                    alert('Doom');
+                }
+            }
+            if (userChoice == 2) {
+                return function () {
+                    alert('Disapear');
+                }
+            }
+            if (userChoice == 3) {
+                return function () {
+                    alert('caves');
+                }
+            }
+
+        }
         
-        console.log(puzzlers[0](7));
-        console.log(puzzlers[1](7));
-        console.log(puzzlers[2](7));
-        console.log(puzzlers[3](7));
+        console.log(adventureSelected(1));
+        console.log(adventureSelected(2));
+        console.log(adventureSelected(3));
     </script>
 </head>
 
