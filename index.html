@@ -241,26 +241,49 @@
         //        console.log(countString(array))
 
         ///////////////////////////////////////////////////////////////////////////////////////////////////////////\
-        var nombreFUncion = function () {
-            console.log('funcion como var')
-        }
+        //        var nombreFUncion = function () {
+        //            console.log('funcion como var')
+        //        }
+        //
+        //        function nombre() {
+        //            console.log('funcion')
+        //        }
+        //        var passengers = [["Thomas", "Meeks"], ["Gregg", "Pollback"], ["Chris",
+        //            "Wong"], ["Dan",
+        //            "McGaw"]];
+        //
+        //        var modifiedNames = passengers.map(function (arrayNombreApellido) {
+        //            return arrayNombreApellido[0] + arrayNombreApellido[1];
+        //        });
+        //        console.log(modifiedNames);
+        //
+        //
+        //        modifiedNames.map(function(arrayYo) {
+        //            alert('Yo '+arrayYo);
+        //        })
 
-        function nombre() {
-            console.log('funcion')
-        }
-        var passengers = [["Thomas", "Meeks"], ["Gregg", "Pollback"], ["Chris",
-            "Wong"], ["Dan",
-            "McGaw"]];
-
-        var modifiedNames = passengers.map(function (arrayNombreApellido) {
-            return arrayNombreApellido[0] + arrayNombreApellido[1];
-        });
-        console.log(modifiedNames);
 
 
-        modifiedNames.map(function(arrayYo) {
-            alert('Yo '+arrayYo);
-        })
+
+        var puzzlers = [function (input) {
+            return (3 * input - 8);
+        }, function (input) {
+            return Math.pow((input + 2), 3);
+        }, function (input) {
+            return (Math.pow((input), 2) - 9);
+        }, function (input) {
+            return (input % 4);
+        }];
+        console.log(puzzlers[0](5));
+        console.log(puzzlers[1](5));
+        console.log(puzzlers[2](5));
+        console.log(puzzlers[3](5));
+
+        
+        console.log(puzzlers[0](7));
+        console.log(puzzlers[1](7));
+        console.log(puzzlers[2](7));
+        console.log(puzzlers[3](7));
     </script>
 </head>
 
