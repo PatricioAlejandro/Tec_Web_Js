@@ -248,6 +248,14 @@
         function nombre() {
             console.log('funcion')
         }
+        var passengers = [["Thomas", "Meeks"], ["Gregg", "Pollback"], ["Chris",
+            "Wong"], ["Dan",
+            "McGaw"]];
+
+        var modifiedNames = passengers.map(function (arrayNombreApellido) {
+            return arrayNombreApellido[0]+arrayNombreApellido[1];
+        });
+        console.log(modifiedNames);
     </script>
 </head>
 
