@@ -12,7 +12,8 @@ app.post('/TecnologiasWeb', function (req, res) {
         nombre: 'pato',
         cedula: '0000000000'
     }
-    
+    usuario.apellido = 'chavez';
+    usuario.mascotas = [];
     
     console.log('Request: ');
     console.log(req.headers);
