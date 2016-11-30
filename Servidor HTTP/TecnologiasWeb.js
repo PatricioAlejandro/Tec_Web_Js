@@ -7,11 +7,19 @@ app.get('/TecnologiasWeb', function (req, res) {
     res.send('con Javascript');
 });
 app.post('/TecnologiasWeb', function (req, res) {
+    
+    var usuario = {
+        nombre: 'pato',
+        cedula: '0000000000'
+    }
+    
+    
     console.log('Request: ');
     console.log(req.headers);
     console.log('Response: ');
     console.log(res.headers);
-    res.send('con Post');
+    res.json(usuario);
+    //res.send('con Post');
 });
 
 app.listen(puerto, function () {
