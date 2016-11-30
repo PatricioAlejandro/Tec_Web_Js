@@ -14,7 +14,7 @@ var usuarios = [{
     nombre: 'Juan',
     cedula: '12837912874'
 }];
-
+var contador = 3;
 
 app.get('/TecnologiasWeb', function (req, res) {
     res.send('con Javascript');
@@ -31,7 +31,24 @@ app.get('/Usuario/:idUsuario', function (req, res) {
 
 });
 app.get('/Usuario', function (req, res) {
-            res.json(usuarios);
+    res.json(usuarios);
+});
+
+app.post('/Usuario', function (req, res) {
+    if (!req.query.nombre) {
+        res.send('no envio el nombre');
+    }
+    if (!req.query.cedula) {
+        res.send('no envio la cedula');
+    }
+    var nuevoUsuario = {
+        id: contador + 1,
+        nombre: req.query.nombre,
+        cedula: req.query.cedula
+    }
+    usuarios.push(nuevoUsuario);
+    contador++;
+    res.json(nuevoUsuario);
 });
 
 app.post('/TecnologiasWeb', function (req, res) {
