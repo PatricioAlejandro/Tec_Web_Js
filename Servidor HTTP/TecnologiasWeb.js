@@ -1,7 +1,7 @@
 var express = require('express');
 var app = express();
 
-app.get('/TecnologiasWeb', function (req, res) {
+app.post('/TecnologiasWeb', function (req, res) {
   res.send('con Javascript');
 });
 
