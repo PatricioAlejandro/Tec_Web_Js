@@ -8,21 +8,18 @@ app.get('/TecnologiasWeb', function (req, res) {
 });
 app.post('/TecnologiasWeb', function (req, res) {
 
+
+    var parametros = res.params;
+
     var usuario = {
         nombre: 'pato',
         cedula: '0000000000'
     }
-    
-    usuario.apellido = 'chavez';
-    usuario.mascotas = [];
-    res.append('token', '1234') ;//aumentar una cabecera
-    console.log('Request: ');
-    console.log(req.headers);
-    console.log('Response: ');
-    console.log(res.headers);
+
+    res.append('token', '1234');
 
     res.json(usuario);
-    //res.send('con Post');
+
 });
 
 app.listen(puerto, function () {
