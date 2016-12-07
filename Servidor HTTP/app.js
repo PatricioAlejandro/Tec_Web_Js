@@ -9,28 +9,35 @@ var quePasa = '';
 quePasa = 'esta por leer el archivo!';
 console.log(quePasa);
 
-fs.readFile('./Paginas/pagina.html', 'utf8',
-    function (error, archivoLeido) {
-        console.log(error);
-        console.log(archivoLeido);
-    });
-quePasa = 'termino de leer el archivo!';
-console.log(quePasa);
+//fs.readFile('./Paginas/pagina.html', 'utf8',
+//    function (error, archivoLeido) {
+//        console.log(error);
+//        console.log(archivoLeido);
+//    });
+//quePasa = 'termino de leer el archivo!';
+//console.log(quePasa);
 
 
 
 app.get('/', function (req, res) {
+    var todo = '';
 
-    quePasa = '1 esta por leer el archivo!';
-    console.log(quePasa);
+
     fs.readFile('./Paginas/pagina.html', 'utf8',
-        function (error, archivoLeido) {
-            console.log('3 ' + error);
-            console.log('4 ' + archivoLeido);
-            res.send(archivoLeido);
+        function (error, archivo1Leido) {
+            todo += archivo1Leido;
+            fs.readFile('./Paginas/usuario.html', 'utf8',
+                function (error, archivo2Leido) {
+                    todo += archivo2Leido;
+                    fs.readFile('./Paginas/usuario.html', 'utf8',
+                        function (error, archivo2Leido) {
+                            todo += archivo2Leido;
+                            res.send(todo);
+                        });
+                });
         });
+});
 
-    quePasa = ' 2 esta por leer el archivo!';
-    console.log(quePasa);
-
+app.listen(puerto, function () {
+    console.log('Ejemplo de javascript esta en el puerto:' + puerto);
 });
