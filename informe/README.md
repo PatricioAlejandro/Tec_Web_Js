@@ -47,7 +47,7 @@ El tema de la práctica es: `NPM`
 
 <br><br>
 <p align="center">
-<img src="https://github.com/PatricioAlejandro/Tec_Web_Js/blob/nodejs%230/informe/img/nodejs.png" width="300" height="200">
+<img src="https://github.com/PatricioAlejandro/Tec_Web_Js/blob/nodejs%230/informe/img/nodejs.png">
 </p>
 <br><br>
 <br>
