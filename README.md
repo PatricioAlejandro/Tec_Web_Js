@@ -27,3 +27,7 @@ Se encuentra localizado en la carpeta **assets**
 ##
 
 no se necesita reiniciar el servidor cuando estamos editando las vistas
+
+## generar controladores SailsJs
+
+> sails generate controller Nombre
