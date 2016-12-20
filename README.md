@@ -23,3 +23,7 @@ Sails pide opciones no definidas, estas son:
 ## Servidor WEB de Sails
 
 Se encuentra localizado en la carpeta **assets**
+
+##
+
+no se necesita reiniciar el servidor cuando estamos editando las vistas
