@@ -6,14 +6,23 @@
  */
 
 module.exports = {
-	hola: function(req,res){
-        res.send('hola');
+    hola: function (req, res) {
+        if (req.method == 'GET') {
+            res.json('hola get');
+        }else{
+            if (req.method == 'POST') {
+            res.json('hola post');
+        }else{
+            res.json('hola todos');
+        }
+        }
+        
+
     },
-    adios: function(req,res){
+    adios: function (req, res) {
         res.send('adios');
     },
-    hora: function(req,res){
+    hora: function (req, res) {
         res.send('hora');
     }
 };
-
