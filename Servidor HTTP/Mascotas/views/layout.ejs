@@ -1,7 +1,10 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title><%=typeof title == 'undefined' ? 'New Sails App' : title%></title>
+
+<head>
+    <title>
+        <%=typeof title == 'undefined' ? 'New Sails App' : title%>
+    </title>
 
     <!-- Viewport mobile tag for sensible mobile support -->
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -31,14 +34,15 @@
     <!--STYLES-->
     <link rel="stylesheet" href="/styles/estilos.css">
     <!--STYLES END-->
-  </head>
+</head>
 
-  <body>
+<body>
+    <h1>HOLA</h1>
     <%- body %>
 
+        <h1>ADIOS</h1>
 
-
-    <!--
+        <!--
         Client-side Templates
         ========================
 
@@ -59,12 +63,12 @@
               stringfile before they're served.
     -->
 
-    <!--TEMPLATES-->
-    
-    <!--TEMPLATES END-->
+        <!--TEMPLATES-->
+
+        <!--TEMPLATES END-->
 
 
-    <!--
+        <!--
 
       Client-side Javascript
       ========================
@@ -87,9 +91,10 @@
 
     -->
 
-    <!--SCRIPTS-->
-    <script src="/js/dependencies/sails.io.js"></script>
-    <script src="/app/app.js"></script>
-    <!--SCRIPTS END-->
-  </body>
+        <!--SCRIPTS-->
+        <script src="/js/dependencies/sails.io.js"></script>
+        <script src="/app/app.js"></script>
+        <!--SCRIPTS END-->
+</body>
+
 </html>
