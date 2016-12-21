@@ -37,3 +37,10 @@ no se necesita reiniciar el servidor cuando estamos editando las vistas
 > sails generate api Nombre
 
 es la funsion de un controlador y un modelo
+
+## generar un modelo
+> sails generate model Nombre
+
+waterline orm que maneja las tablas
+
+
