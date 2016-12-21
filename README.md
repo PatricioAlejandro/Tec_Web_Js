@@ -44,3 +44,23 @@ es la funsion de un controlador y un modelo
 waterline orm que maneja las tablas
 
 
+
+
+# APi REST
+
+URL:
+http://localhost:1337/
+
+Metodo HTTP:
+POST  
+Datos:
+javascript{
+    nombre:'Pato',
+    apellido:'asdas',
+    correo:'asdads@sdfgd.com'
+}
+(json)
+
+Metodo HTTP:
+POST 
+
