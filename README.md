@@ -31,3 +31,9 @@ no se necesita reiniciar el servidor cuando estamos editando las vistas
 ## generar controladores SailsJs
 
 > sails generate controller Nombre
+
+
+## generar un api
+> sails generate api Nombre
+
+es la funsion de un controlador y un modelo
