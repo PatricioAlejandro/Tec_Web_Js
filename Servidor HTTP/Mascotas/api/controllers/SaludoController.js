@@ -9,14 +9,14 @@ module.exports = {
     hola: function (req, res) {
         if (req.method == 'GET') {
             res.json('hola get');
-        }else{
+        } else {
             if (req.method == 'POST') {
-            res.json('hola post');
-        }else{
-            res.json('hola todos');
+                res.json('hola post');
+            } else {
+                res.json('hola todos');
+            }
         }
-        }
-        
+
 
     },
     adios: function (req, res) {
