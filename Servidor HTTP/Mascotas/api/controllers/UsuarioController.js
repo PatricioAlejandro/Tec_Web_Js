@@ -7,18 +7,34 @@
 
 module.exports = {
 
-    //acceder al siguiente metodo /Usuario/crearUsuario
-    crearUsuario: function (req, res) {
-        Usuario.create({
-            name: 'Juan'
-        }).exec(function (err, juan) {
-            if (err) {
-                return res.serverError(err);
-            }
 
-            sails.log('Finn\'s id is:', finn.id);
-            return res.ok();
-        });
+    //acceder al siguiente metodo /Usuario/crearUsuario
+
+
+    crearUsuario: function (req, res) {
+        //guardar todos los parametros en una variable parametros
+        var parametros = req.allParams();
+        console.log(parametros);
+        //
+        if (re.method == 'POST') {
+            if (parametros.nombres && parametros.apellidos) {
+                Usuario.create({
+                    nombres: parametros.nombres,
+                    apellidos: parametros.apellidos,
+                    correo: parametros.correo
+                }).exec(function (err, usuarioCreado) {
+                    if (err) {
+                        return res.serverError(err);
+                    }
+                    sails.log.info(usuarioCreado);
+                    return res.ok(usuarioCreado); //200
+                });
+            } else {
+                return res.badRequest('No envia todos los parametros');
+            }
+        } else {
+            return res.badRequest('Metodo invalido');
+        }
     }
 
 };
