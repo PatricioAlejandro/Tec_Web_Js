@@ -16,7 +16,7 @@ module.exports = {
         var parametros = req.allParams();
         console.log(parametros);
         //
-        if (re.method == 'POST') {
+        if (req.method == 'POST') {
             if (parametros.nombres && parametros.apellidos) {
                 Usuario.create({
                     nombres: parametros.nombres,
