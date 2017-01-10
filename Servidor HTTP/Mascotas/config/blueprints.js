@@ -45,6 +45,10 @@ module.exports.blueprints = {
   ***************************************************************************/
 
   // actions: true,
+    
+//    http://localhost:1337/Usuario/create?nombres=Patricio&apellidos=Chavez
+//    http://localhost:1337/Usuario/destroy/1
+//    http://localhost:1337/Usuario/update/1?nombres=Patricio
 
   /***************************************************************************
   *                                                                          *
