@@ -44,7 +44,8 @@ module.exports.routes = {
     '/Cuenca': {
         view: 'cuenca'
     },
-    'get /inicio': 'RutasController.home'
+    'get /inicio': 'RutasController.home',
+    'get /CrearUsuario': 'RutasController.crearUsuario'
 
 
 

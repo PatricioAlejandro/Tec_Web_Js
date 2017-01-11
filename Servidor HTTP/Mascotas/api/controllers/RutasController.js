@@ -16,5 +16,8 @@ module.exports = {
                 cedula: 1003971536
             }
         })
+    },
+    crearUsuario: function (req, res) {
+        return res.view('vistas/crearUsuario')
     }
 };
