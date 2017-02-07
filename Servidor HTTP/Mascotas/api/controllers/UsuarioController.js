@@ -11,32 +11,48 @@ module.exports = {
 
 
     crearUsuario: function (req, res) {
-        //   Se accede asi: /Usuario/crearUsuario
+        if (req.method == "POST") {
 
-        // Guardando todos los parametros en la variable parametros
-
-        var parametros = req.allParams();
-        console.log(parametros);
-
-        if (req.method == 'POST') {
+            var parametros = req.allParams();
             if (parametros.nombres && parametros.apellidos) {
-                //creo el usuario
+                if (parametros.correo == "") {
+                    parametros.correo = null;
+                }
                 Usuario.create({
                     nombres: parametros.nombres,
                     apellidos: parametros.apellidos,
                     correo: parametros.correo
                 }).exec(function (error, usuarioCreado) {
-                    if (error) return res.serverError()
-                    sails.log.info(usuarioCreado);
-                    return res.ok(usuarioCreado);
+                    if (error) {
+                        return res.view('vistas/Error', {
+                            error: {
+                                descripcion: "Fallo al crear un Usuario",
+                                rawError: error,
+                                url: "/CrearUsuario"
+                            }
+                        })
+                    }
+                    return res.ok("vistas/Usuario/crearUsuario");
                 });
             } else {
-                // bad Request
-                return res.badRequest('No envia todos los parametros');
+                return res.view('vistas/Error', {
+                    error: {
+                        descripcion: "Llena todos los parametros de nombres y apellidos",
+                        rawError: "Fallo en envio de parametros",
+                        url: "/CrearUsuario"
+                    }
+                })
             }
         } else {
-            return res.badRequest('Metodo invalido');
+            return res.view('vistas/Error', {
+                error: {
+                    descripcion: "Error en el uso del Metodo HTTP",
+                    rawError: "HTTP Invalido",
+                    url: "/CrearUsuario"
+                }
+            })
         }
+
 
     }
 
