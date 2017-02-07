@@ -1,1 +1,0 @@
-alert("No es Bueno usar alertas");
