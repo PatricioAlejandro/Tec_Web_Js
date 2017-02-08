@@ -68,7 +68,6 @@ module.exports = {
 
 
     },
-
     borrarUsuarios: function (req, res) {
 
         var parametros = req.allParams();
@@ -114,10 +113,24 @@ module.exports = {
     editarUsuarios: function (req, res) {
 
         var parametros = req.allParams();
-        if (parametros.id) {
-            Usuario.destroy({
+        if (parametros.id && (parametros.nombres || parametros.apellidos || parametros.correo)) {
+            var usuarioEdit = {
+                nombres: parametros.nombres,
+                apellido: parametros.apellido,
+                correo: parametros.correo
+            }
+            if (usuarioEdit.nombres == "") {
+                delete usuarioEdit.nombres
+            }
+            if (usuarioEdit.apellidos == "") {
+                delete usuarioEdit.apellidos
+            }
+            if (usuarioEdit.correo == "") {
+                delete usuarioEdit.correo
+            }
+            Usuario.update({
                 id: parametros.id
-            }).exec(function (err, UsuarioRemovido) {
+            }, usuarioEdit).exec(function (err, UsuarioRemovido) {
                 if (err) {
                     return res.view('vistas/Error', {
                         error: {
@@ -145,9 +158,9 @@ module.exports = {
         } else {
             return res.view('vistas/Error', {
                 error: {
-                    descripcion: "Necesitamos el id para borrar al usuario",
-                    rawError: "No envia ID",
-                    url: "/ListarUsuarios"
+                    descripcion: "Necesitamos el id y el nombreo el apellido o el correo",
+                    rawError: "No envia info...",
+                    url: "/editarUsuarios"
                 }
             })
         }
