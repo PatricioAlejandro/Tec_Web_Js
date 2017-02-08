@@ -32,7 +32,20 @@ module.exports = {
                             }
                         })
                     }
-                    return res.ok("vistas/Usuario/crearUsuario")
+                    Usuario.find().exec(function (err, usuariosEncontrados) {
+                        if (err) {
+                            return res.view('vistas/Error', {
+                                error: {
+                                    descripcion: "Hubo un problema cargano los usuarios",
+                                    rawError: err,
+                                    url: "/ListarUsuarios"
+                                }
+                            });
+                        }
+                        return res.view('vistas/Usuario/listarUsuarios', {
+                            usuarios: usuariosEncontrados
+                        });
+                    })
                 });
             } else {
                 return res.view('vistas/Error', {
@@ -54,7 +67,93 @@ module.exports = {
         }
 
 
+    },
+
+    borrarUsuarios: function (req, res) {
+
+        var parametros = req.allParams();
+        if (parametros.id) {
+            Usuario.destroy({
+                id: parametros.id
+            }).exec(function (err, UsuarioRemovido) {
+                if (err) {
+                    return res.view('vistas/Error', {
+                        error: {
+                            descripcion: "Error inesperado",
+                            rawError: err,
+                            url: "/ListarUsuarios"
+                        }
+                    })
+                }
+                Usuario.find().exec(function (err, usuariosEncontrados) {
+                    if (err) {
+                        return res.view('vistas/Error', {
+                            error: {
+                                descripcion: "Hubo un problema cargano los usuarios",
+                                rawError: err,
+                                url: "/ListarUsuarios"
+                            }
+                        });
+                    }
+                    return res.view('vistas/Usuario/listarUsuarios', {
+                        usuarios: usuariosEncontrados
+                    });
+                })
+            })
+        } else {
+            return res.view('vistas/Error', {
+                error: {
+                    descripcion: "Necesitamos el id para borrar al usuario",
+                    rawError: "No envia ID",
+                    url: "/ListarUsuarios"
+                }
+            })
+        }
+
+    },
+    editarUsuarios: function (req, res) {
+
+        var parametros = req.allParams();
+        if (parametros.id) {
+            Usuario.destroy({
+                id: parametros.id
+            }).exec(function (err, UsuarioRemovido) {
+                if (err) {
+                    return res.view('vistas/Error', {
+                        error: {
+                            descripcion: "Error inesperado",
+                            rawError: err,
+                            url: "/ListarUsuarios"
+                        }
+                    })
+                }
+                Usuario.find().exec(function (err, usuariosEncontrados) {
+                    if (err) {
+                        return res.view('vistas/Error', {
+                            error: {
+                                descripcion: "Hubo un problema cargano los usuarios",
+                                rawError: err,
+                                url: "/ListarUsuarios"
+                            }
+                        });
+                    }
+                    return res.view('vistas/Usuario/listarUsuarios', {
+                        usuarios: usuariosEncontrados
+                    });
+                })
+            })
+        } else {
+            return res.view('vistas/Error', {
+                error: {
+                    descripcion: "Necesitamos el id para borrar al usuario",
+                    rawError: "No envia ID",
+                    url: "/ListarUsuarios"
+                }
+            })
+        }
+
     }
+
 
     //    crearUsuario: function (req, res) {
     //        //   Se accede asi: /Usuario/crearUsuario
