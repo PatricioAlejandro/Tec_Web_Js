@@ -28,9 +28,20 @@ module.exports = {
 
     },
     listarUsuarios: function (req, res) {
-
-        return res.view('vistas/Usuario/listarUsuario')
-
+        Usuario.find().exec(function (err, usuariosEncontrados) {
+            if (err) {
+                return res.view('vistas/Error', {
+                    error: {
+                        descripcion: "Hubo un problema cargano los usuarios",
+                        rawError: err,
+                        url: "/ListarUsuarios"
+                    }
+                });
+            }
+            return res.view('vistas/Usuario/listarUsuarios', {
+                usuarios: usuariosEncontrados
+            });
+        })
     },
     error: function (req, res) {
 
