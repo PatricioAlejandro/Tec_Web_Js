@@ -27,7 +27,11 @@ module.exports = {
         return res.view('vistas/Usuario/crearUsuario')
 
     },
+    listarUsuarios: function (req, res) {
 
+        return res.view('vistas/Usuario/listarUsuario')
+
+    },
     error: function (req, res) {
 
         return res.view('vistas/Error', {
