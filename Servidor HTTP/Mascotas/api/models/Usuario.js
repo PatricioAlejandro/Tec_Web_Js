@@ -22,8 +22,17 @@ module.exports = {
           type:'string',
           email:true,
           defaultsTo:'correo@invalido.com'
+      },
+      password:{
+          type:'string',
+          defaultsTo:'123456'
       }
-  }
+  },
+    beforeCreate: function (values, cb){
+        sails.log.info(values);
+        //cb(12312312)//error
+        //cb()//ok
+    }
     
 };
 
