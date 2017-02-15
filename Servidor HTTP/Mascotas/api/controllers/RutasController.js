@@ -38,7 +38,8 @@ module.exports = {
                 }
 
                 res.view('vistas/Usuario/ListarUsuarios', {
-                    usuarios: usuariosEncontrados
+                    usuarios: usuariosEncontrados,
+                    inicioSesion: true
                 });
             })
     },

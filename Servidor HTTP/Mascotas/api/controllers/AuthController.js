@@ -55,7 +55,9 @@ module.exports = {
                             },
                             // OK.
                             success: function () {
-                                return res.ok("Credencial Segura")
+                                req.session.credencialSegura = UsuarioEncontrado;
+
+                                return res.view("vistas/home");
                             },
                         });
                     } else {
@@ -78,6 +80,18 @@ module.exports = {
                 }
             });
         }
+    },
+    tieneSesion: function (req, res) {
+        if (req.session.credencialSegura) {
+            return res.ok("Si tiene la credencial Segura");
+        } else {
+            return res.forbidden();
+        }
+    },
+    logout: function (req, res) {
+        req.session.credencialSegura = undefined;
+        return res.view("login");
+      
     }
 
 };
