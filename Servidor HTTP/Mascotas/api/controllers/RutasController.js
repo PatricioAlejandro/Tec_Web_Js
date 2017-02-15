@@ -44,7 +44,7 @@ module.exports = {
     },
 
 
-    editarUsuarios: function (req, res) {
+    editarUsuario: function (req, res) {
 
         var parametros = req.allParams();
 

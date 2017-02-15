@@ -9,7 +9,6 @@
 
 module.exports = {
 
-
     crearUsuario: function (req, res) {
 
         if (req.method == "POST") {
@@ -141,11 +140,12 @@ module.exports = {
         var parametros = req.allParams();
 
         if (parametros.idUsuario && (parametros.nombres || parametros.apellidos || parametros.correo)) {
-
+            
             var usuarioAEditar = {
                 nombres: parametros.nombres,
                 apellidos: parametros.apellidos,
-                correo: parametros.correo
+                correo: parametros.correo,
+                password: parametros.password
             }
 
             if (usuarioAEditar.nombres == "") {
@@ -157,8 +157,10 @@ module.exports = {
             if (usuarioAEditar.correo == "") {
                 delete usuarioAEditar.correo
             }
-
-
+            if (usuarioAEditar.password == "") {
+                delete usuarioAEditar.password
+            }
+            
 
             Usuario.update({
                     id: parametros.idUsuario
@@ -173,7 +175,7 @@ module.exports = {
                             }
                         });
                     }
-
+                
                     Usuario.find()
                         .exec(function (errorIndefinido, usuariosEncontrados) {
 
@@ -193,11 +195,11 @@ module.exports = {
                         })
 
                 })
-
-
-
-
-
+            
+            
+            
+            
+            
 
         } else {
             return res.view('vistas/Error', {
@@ -212,5 +214,6 @@ module.exports = {
 
 
     }
+
 
 };
