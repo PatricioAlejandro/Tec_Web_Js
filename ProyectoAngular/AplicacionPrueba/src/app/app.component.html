@@ -3,6 +3,10 @@
   <p>
     {{nombre}}-{{apellido}}
   </p>
-  <h3 [innerHTML]="nombreCompleto()" (click)="hizoClick()" (mouseenter)="hizoFocus()"  [style.backgroundColor]="'red'" #NombreUsuario></h3>
-  <input type="text" [placeholder]="nombreCompleto()">
+  <div class="form-group">
+    <form action=""></form>
+    <label>Tienda</label>
+    <input type="text" class="form-control" placeholder="Nombre Tienda" name="nombre" [(ngModel)]="nuevaTienda.nombre">
+    <button type="submit" class="btn btn-block btn-success"></button>
+  </div>
 </h1>
