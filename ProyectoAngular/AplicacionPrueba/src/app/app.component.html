@@ -1,3 +1,8 @@
 <h1>
   {{title}}
+  <p>
+    {{nombre}}-{{apellido}}
+  </p>
+  <h3 [innerHTML]="nombreCompleto()" (click)="hizoClick()" (mouseenter)="hizoFocus()"  [style.backgroundColor]="'red'" #NombreUsuario></h3>
+  <input type="text" [placeholder]="nombreCompleto()">
 </h1>
