@@ -1,5 +1,5 @@
 import {Component, OnInit} from '@angular/core';
-import {Http} from "@angular/http";
+import {Http, Response} from "@angular/http";
 import {MasterURLService} from "./services/master-url.service";
 
 @Component({
@@ -7,53 +7,86 @@ import {MasterURLService} from "./services/master-url.service";
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent implements OnInit{
-  title: string = "Hola Amigos";
-  nombre: string = "";
-  apellido: string = "";
-  colorH4 = "red";
-  tamanoH4 = "52px";
-  classes = "btn btn-block btn-success";
-  nuevaTienda:any={};
+export class AppComponent implements OnInit {
+  title: string = "Bienvenido a Ingresar Tiendas";
+  nuevaTienda: any = {};
+  error: string = "No hay errores";
+  tiendas = [];
+  disabledButtons = {
+    NuevaTiendaFormSubmitButton: false
+  }
 
-
-  constructor(private _http: Http, private _masterURL:MasterURLService) {
-    this.apellido = "Chavez";
-    this.nombre = "Patricio";
-    console.log("Inicio el constructor");
+  constructor(private _http: Http, private _masterURL: MasterURLService) {
   }
 
   ngOnInit() {
-    this.apellido = "Sarzosa";
-    this.nombre = "Vicente";
-    console.log("On Init")
-  }
-
-  nombreCompleto(): string {
-    return `${this.nombre} ${this.apellido}`
-  }
-
-  hizoClick() {
-    console.log("Hizo Click");
-    console.log()
-  }
-
-  hizoFocus() {
-    console.log("Hizo focus");
-  }
-
-
-  crearTienda(formulario){
-    console.log(formulario);
-    this._http
-      .post(this._masterURL.url, {})
+    this._http.get(this._masterURL.url + "Tienda")
       .subscribe(
-        res=>console.log('Respuesta: ',res),
-        err=>console.log('Error: ',err),
-        ()=>{
+        (res: Response) => {
+          this.tiendas = res.json();
+        },
+        err => {
+          console.log('Error: ', err)
+        },
+        () => {
+          console.log("Se completo la accion")
+        }
+      )
+  }
+
+  crearTienda(formulario) {
+    this.disabledButtons.NuevaTiendaFormSubmitButton = true;
+    this._http
+      .post(this._masterURL.url + "Tienda", {
+        nombre: formulario.value.nombre
+      })
+      .subscribe(
+        res => {
+          console.log('No hubo errores: ', res);
+          this.tiendas.push(res.json());
+          this.nuevaTienda = {};
+          this.disabledButtons.NuevaTiendaFormSubmitButton = false;
+        },
+        err => {
+          console.log('Error: ', err)
+          this.disabledButtons.NuevaTiendaFormSubmitButton = false;
+        },
+        () => {
           console.log("Se completo la accion")
         }
       );
   }
 
+  borrarTienda(id: number) {
+    let parametros = {
+      id: id
+    }
+    this._http.delete(this._masterURL.url + "Tienda/" + parametros.id)
+      .subscribe(
+        res => {
+          let tiendaBorrada = res.json();
+          this.tiendas = this.tiendas.filter(value => tiendaBorrada.id != value.id);
+        },
+        err => {
+          console.log('Error: ', err)
+        },
+        () => {
+          console.log("Se completo la accion")
+        }
+      );
+  }
+
+  actualizarTienda(tienda: any) {
+    let parametros = {
+      nombre: tienda.nombre
+    }
+    this._http.put(this._masterURL.url + "Tienda/" + tienda.id, parametros).subscribe(
+      (res)=>{
+        console.log("Respuesta: ",res.json());
+      },
+      (err)=>{
+        console.log("Error: ",err);
+      }
+    )
+  }
 }
