@@ -7,11 +7,13 @@ import { AppComponent } from './app.component';
 import {MasterURLService} from "./services/master-url.service";
 import { HomeComponent } from './home/home.component';
 import {routing} from "./app.routes";
+import { TiendaComponent } from './tienda/tienda.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent
+    HomeComponent,
+    TiendaComponent
   ],
   imports: [
     BrowserModule,
