@@ -3,16 +3,11 @@
 <div class="container">
   <div class="row">
     <div class="col-sm-12">
-      <pre>
-        {{nuevaTienda|json}}
-      </pre>
     </div>
     <div class="col-sm-6">
       <form (ngSubmit)="crearTienda(NuevaTiendaForm)" #NuevaTiendaForm="ngForm">
         <div class="form-group animated bounceIn">
-          <pre>
-            {{nombre}}
-          </pre>
+
           <label>Tienda</label>
           <div class="animated slideInUp" [hidden]="!nombre.errors">
             <span class="bg-primary" *ngIf="nombre.errors && (nombre.dirty || nombre.touched)">Ingrese un nombre minimo con cuatro caracteres</span>
@@ -54,6 +49,9 @@
         <div class="col-sm-5">
           <button class="btn btn-block btn-danger" (click)="borrarTienda(tienda.id)">Borrar
           </button>
+        </div>
+        <div class="col-sm-12">
+          <a [routerLink]="[tienda.id,'producto']">Ir a Productos</a>
         </div>
       </div>
       <div class="div" [hidden]="tienda.formularioCerrado">
