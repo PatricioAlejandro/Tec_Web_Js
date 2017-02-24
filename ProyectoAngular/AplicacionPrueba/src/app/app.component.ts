@@ -86,6 +86,7 @@ export class AppComponent implements OnInit {
     }
     this._http.put(this._masterURL.url + "Tienda/" + tienda.id, parametros).subscribe(
       (res)=>{
+        tienda.formularioCerrado = !tienda.formularioCerrado;
         console.log("Respuesta: ",res.json());
       },
       (err)=>{

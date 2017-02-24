@@ -39,14 +39,15 @@
   </div>
   <div class="row">
     <div class="col-sm-12 animated flipInX" *ngFor="let tienda of tiendas">
-      <pre>{{tienda| json}}</pre>
+      <!--<pre>{{tienda| json}}</pre>-->
       <div class="text-center">
         <h5>NOMBRE: {{tienda.nombre}}</h5>
         <p>ID: {{tienda.id}}</p>
       </div>
-      <div class="row">
+      <div class="row animated bounceIn" [hidden]="!tienda.formularioCerrado">
         <div class="col-sm-5">
-          <button class="btn btn-block btn-info">Actualizar
+          <button class="btn btn-block btn-info" (click)="tienda.formularioCerrado = !tienda.formularioCerrado">
+            Actualizar
           </button>
         </div>
         <div class="col-sm-2"></div>
@@ -73,9 +74,20 @@
                    #nombreElm>
 
           </div>
-          <button [disabled]="disabledButtons.NuevaTiendaFormSubmitButton||!NuevaTiendaForm.valid" type="submit"
-                  class="btn btn-block btn-success">Crear Tienda
-          </button>
+          <div class="row">
+            <div class="col-sm-8">
+              <button [disabled]="disabledButtons.NuevaTiendaFormSubmitButton||!NuevaTiendaForm.valid" type="submit"
+                      class="btn btn-block btn-success">Crear Tienda
+              </button>
+            </div>
+            <div class="col-sm-4">
+              <button type="button" class="btn btn-block btn-warning"
+                      (click)="tienda.formularioCerrado = !tienda.formularioCerrado">Cancelar
+              </button>
+            </div>
+          </div>
+
+
         </form>
       </div>
     </div>
@@ -83,3 +95,4 @@
 
 
 </div>
+<router-outlet></router-outlet>

@@ -5,15 +5,19 @@ import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
 import {MasterURLService} from "./services/master-url.service";
+import { HomeComponent } from './home/home.component';
+import {routing} from "./app.routes";
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule
+    HttpModule,
+    routing
   ],
   providers: [
     MasterURLService
